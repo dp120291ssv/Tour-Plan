@@ -1,2 +1,47 @@
-header
+.header
     background-color: #fff
+    .header-top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 40px
+        padding-bottom: 40px
+    .header__search
+        margin-right: auto
+        margin-left: 108px
+.search
+    display: flex
+    position: relative
+    overflow: hidden
+    border-radius: 6px
+    height: 40px
+    .search__input
+        width: 350px
+        height: 100%
+        padding-left: 23px
+        padding-right: 75px
+        background-color: #F5FAFE
+        border: none
+        font-size: 12px
+        line-height: 15px
+        color: $text-color
+    .search_button
+        position: absolute
+        height: 100%
+        width: 65px
+        top: 0
+        right: 0
+        border: none
+        background-color: $primary
+.user
+    display: flex
+    align-items: center
+    text-decoration: none
+    .user__avatar
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        object-fit: cover
+    .user__name
+        margin-left: 18px
+        color: $text-color
