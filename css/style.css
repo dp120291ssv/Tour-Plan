@@ -493,6 +493,10 @@ template {
     margin-left: auto;
     max-width: 340px;
   }
+  .navbar-menu {
+    padding-bottom: 22px;
+    padding-top: 22px;
+  }
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
@@ -503,6 +507,9 @@ template {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar-menu {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
