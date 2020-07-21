@@ -6,11 +6,11 @@
         justify-content: space-between
         padding-top: 40px
         padding-bottom: 40px
+        &__menu-button
+            display: none
     &__search
         margin-right: auto
         margin-left: 108px
-    &__menu-button
-        display: none
     &-bottom
         background-color: $dark
     &-menu
@@ -35,7 +35,7 @@
     overflow: hidden
     border-radius: 6px
     height: 40px  
-    .search__input
+    &__input
         width: 350px
         height: 100%
         padding-left: 23px
@@ -45,7 +45,7 @@
         font-size: 12px
         line-height: 15px
         color: $text-color
-    .search_button
+    &_button
         position: absolute
         height: 100%
         width: 65px
@@ -57,11 +57,11 @@
     display: flex
     align-items: center
     text-decoration: none
-    .user__avatar
+    &__avatar
         width: 40px
         height: 40px
         border-radius: 50%
         object-fit: cover
-    .user__name
+    &__name
         margin-left: 18px
         color: $text-color
