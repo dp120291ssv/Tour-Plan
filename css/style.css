@@ -1266,6 +1266,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -1439,6 +1440,9 @@ template {
   }
   .activities .card {
     width: 100%;
+  }
+  .navbar-menu__item {
+    max-width: 245px;
   }
 }
 /*# sourceMappingURL=style.css.map */
