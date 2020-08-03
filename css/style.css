@@ -1658,6 +1658,12 @@ template {
     width: 49%;
     height: 255px;
   }
+  .footer {
+    padding-top: 73px;
+  }
+  .footer-wrapper {
+    grid-row-gap: 35px;
+  }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1699,9 +1705,13 @@ template {
   .navbar-menu__item {
     max-width: 245px;
   }
+  .footer {
+    padding-top: 68px;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-row-gap: 30px;
   }
   .footer__logo {
     -ms-grid-row: 1;
