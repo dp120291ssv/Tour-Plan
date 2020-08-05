@@ -15,7 +15,7 @@
             height: 230px  
     .footer
         &__input
-            flex-basis: 100%                      
+            flex-basis: 100%               
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -70,6 +70,17 @@
         &-wrapper
             grid-template-columns: repeat(6, 1fr)
             grid-row-gap: 40px
+        &__term
+            &-information
+                display: flex
+                justify-content: start
+                padding-top: 43px
+                grid-column: 1 / 5
+                grid-row: 5
+            &-payways
+                padding-top: 45px
+                grid-column: 6 / 7
+                grid-row: 5
         &__input
             flex-basis: 49%
         &__logo
@@ -96,6 +107,8 @@
                 grid-column: span 5
         &__legal
             padding-left: 0
+        &__input
+            flex-basis: 100%  
 @media (max-width: 768px)
     body
         padding-top: 78px
@@ -225,8 +238,6 @@
             height: 255px
     .footer
         padding-top: 73px
-        &-wrapper
-            grid-row-gap: 35px
         &__input
             flex-basis: 100%
         &__legal
@@ -269,6 +280,17 @@
         &-wrapper
             grid-template-columns: 1fr
             grid-row-gap: 30px
+        &__term
+            &-information
+                padding-top: 23px
+                grid-column: 1
+                grid-row: 8
+            &-payways
+                display: flex
+                justify-self: flex-start
+                padding: 0px
+                grid-column: 1
+                grid-row: 9
         &__logo
             grid-row: 1
             grid-column: 1
@@ -305,13 +327,6 @@
         &__message
             max-height: 123px
             margin-bottom: 15px
-        // &__info
-        //     display: block
-        //     min-width: 100%
-        //     order: -1
-        //     margin-bottom: 15px
-        // &__input, &__message
-        //     order: -2
 @media (max-width: 362px)
     .footer
         &-wrapper
@@ -322,7 +337,6 @@
                 max-width: 300px
 @media (max-width: 334px)
     .footer
-        &-wrapper
         &__contact
             &-details
                 max-width: 280px

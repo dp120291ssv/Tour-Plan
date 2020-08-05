@@ -1330,6 +1330,46 @@ template {
   color: #BDBDBD;
 }
 
+.footer__term-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 83px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / 4;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+.footer__term-payways {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 83px;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__infolink {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 .modal__overlay {
   position: fixed;
   left: 0;
@@ -1519,6 +1559,28 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
+  .footer__term-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-top: 43px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  .footer__term-payways {
+    padding-top: 45px;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 1;
+    grid-column: 6 / 7;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
   .footer__input {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
@@ -1562,6 +1624,10 @@ template {
   }
   .footer__legal {
     padding-left: 0;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -1755,9 +1821,6 @@ template {
   .footer {
     padding-top: 73px;
   }
-  .footer-wrapper {
-    grid-row-gap: 35px;
-  }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1819,6 +1882,24 @@ template {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-row-gap: 30px;
+  }
+  .footer__term-information {
+    padding-top: 23px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 8;
+    grid-row: 8;
+  }
+  .footer__term-payways {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: flex-start;
+    padding: 0px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 9;
+    grid-row: 9;
   }
   .footer__logo {
     -ms-grid-row: 1;
