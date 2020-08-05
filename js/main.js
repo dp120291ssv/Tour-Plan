@@ -8,7 +8,6 @@ $(document).ready(function() {
             nextEl: '.hotel-slider__button--next',
             prevEl: '.hotel-slider__button--prev',
         },
-
         effect: "slide",
     })
 
