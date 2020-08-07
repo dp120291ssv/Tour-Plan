@@ -14,7 +14,7 @@
     <header class="navbar navbar--mobile_fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="/index.html" class="logo">
                     <img src="img/horizontal-logo.png" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
 
@@ -188,8 +188,7 @@
                     </div>
                     <!-- /.booking -->
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412755648676!2d98.29254741482532!3d7.890750807947486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sua!4v1595520272419!5m2!1sru!2sua"
-                            width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <img class="map-image" src="img/map.png" alt="Google Map">
                     </div>
                     <!-- /.map -->
                 </div>
@@ -287,7 +286,7 @@
                     <img src="img/activities/activities-1.webp" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner of chamarel</h3>
                     <!-- /.card__title -->
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
@@ -295,7 +294,7 @@
                     <img src="img/activities/activities-2.webp" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course</h3>
                     <!-- /.card__title -->
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
@@ -304,7 +303,7 @@
                     trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                     <!-- /.card__title -->
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
@@ -312,7 +311,7 @@
                     <img src="img/activities/activities-4.webp" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
                     <!-- /.card__title -->
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
                     <!-- /.card__button -->
                 </div>
                 <!-- /.card -->
@@ -325,7 +324,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plane" class="logo footer__logo">
+                <a href="/index.html" class="logo footer__logo">
+                    <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plane">
+                </a>
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
                     <ul class="footer__ul">
@@ -419,13 +420,15 @@
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/contacts/phone-icon.svg" alt="icon: phone">
-                            </div> Tel (business hours) : 269 1500 <br /> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br /> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-                            <br />
+                            </div>
+                            <span class="footer__item--support">Tel (business hours) : <a class="footer__item-contacts" href="tel:01234 567 890"> 01234 567 890</a> <br />
+                                Tel (hotline) Monday - Saturday: <a class="footer__item-contacts" href="tel:52-56-61-38"> 52-56-61-38</a> (08:00 am – 20:00&nbsp;pm) <br />
+                                Tel (hotline) Sunday: <a class="footer__item-contacts" href="tel:52-56-61-38"> 52-56-61-38</a> (08:00 am – 14:00 pm)</span>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
                                 <img class="footer__icon" src="img/contacts/mail-icon.svg" alt="icon: mail">
-                            </div>cherly.lawson@example.com</li>
+                            </div><a class="footer__item-contacts" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a></li>
                     </ul>
                 </div>
                 <!-- /.footer__contact-details -->
@@ -449,7 +452,8 @@
                     <a href="#" class="footer__infolink">Cancellation policy</a>
                 </div>
                 <div class="footer__term-payways">
-                    <a href="#" class="footer__payways"><img src="img/paytype.svg" alt="icon: facebook"></a>
+                    <a href="#" class="footer__payways">
+                        <img class="footer__payways-img" src="img/paytype.svg" alt="icon: facebook"></a>
                 </div>
             </div>
             <!-- /.footer-wrapper -->
@@ -487,7 +491,7 @@
                 <img src="img/close.svg" alt="icon: close">
             </a>
             <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
-            <form action=" " class="modal__form form">
+            <form action="#" class="modal__form form">
                 <!-- <div class="footer__input-group"> -->
                 <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
                 <!-- </div> -->
@@ -495,8 +499,10 @@
                 <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
                 <!-- </div> -->
                 <textarea cols="30" rows="10" class="message modal__message" placeholder="Message"></textarea>
-                <button class="button modal__button" type="submit">Send</button>
-                <span class="modal__info">* Required Fields </span>
+                <div class="modal__footer">
+                    <button class="button modal__button" type="submit">Send</button>
+                    <span class="modal__info">* Required Fields </span>
+                </div>
             </form>
             <!-- </form> -->
         </div>
