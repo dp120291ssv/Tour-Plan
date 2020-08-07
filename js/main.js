@@ -51,14 +51,13 @@ $(document).ready(function() {
             errorClass: "invalid",
             messages: {
                 name: {
-                    required: "Поле Имя обязательно",
-                    minlength: 2,
+                    required: "Name field is required",
                 },
                 email: {
-                    required: "Пле Email обязателен",
+                    required: "Email is required",
                 },
                 phone: {
-                    required: "Поле Телефон обязателен",
+                    required: "The Phone field is required",
                 },
             },
         });
