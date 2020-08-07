@@ -40,6 +40,10 @@ img {
   max-width: 100%;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -827,7 +831,7 @@ template {
 .newsletter {
   padding: 98px 0 87px 0;
   position: relative;
-  background-image: url(../img/newsletter-bg.jpeg);
+  background-image: url(../img/newsletter-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1297,6 +1301,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1337,7 +1345,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 83px;
+  padding-top: 40px;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2 / 4;
@@ -1349,7 +1357,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 83px;
+  padding-top: 40px;
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4 / 5;
@@ -1419,16 +1427,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   max-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__button {
+  margin-top: 15px;
   min-width: 160px;
   min-height: 50px;
   padding: 18px;
@@ -1448,6 +1457,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  margin-top: 15px;
 }
 
 .modal__title {
@@ -1472,6 +1482,16 @@ template {
           align-items: center;
 }
 
+@media (max-width: 1500px) {
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__message {
+    min-height: 123px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1492,6 +1512,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__message {
+    min-height: 123px;
   }
 }
 
@@ -1640,6 +1663,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__message {
+    min-height: 180px;
   }
   .modal__dialog {
     min-width: 400px;
@@ -1866,7 +1892,7 @@ template {
   .footer__term-payways {
     padding-top: 30px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1881,7 +1907,13 @@ template {
             order: -1;
     margin-bottom: 15px;
   }
-  .footer__input, .footer__message {
+  .footer__input-group {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+  .footer__message {
+    min-height: 123px;
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
@@ -2052,8 +2084,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    max-width: 380px;
     -ms-grid-row: 7;
     grid-row: 7;
     -ms-grid-column: 1;
@@ -2062,6 +2093,7 @@ template {
   .footer__message {
     max-height: 123px;
     margin-bottom: 15px;
+    min-height: 120px;
   }
   .modal__input, .modal__message {
     font-size: 70%;
@@ -2090,7 +2122,14 @@ template {
     max-width: 300px;
   }
   .footer__contact-form {
-    max-width: 300px;
+    max-width: 330px;
+  }
+  .footer__input-group {
+    font-size: 12px;
+  }
+  .footer__message {
+    font-size: 12px;
+    min-height: 100px;
   }
   .modal__input, .modal__message {
     font-size: 70%;
@@ -2107,7 +2146,7 @@ template {
     max-width: 280px;
   }
   .footer__contact-form {
-    max-width: 280px;
+    max-width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

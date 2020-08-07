@@ -44,8 +44,23 @@ $(document).ready(function() {
         var modalDialog = $('.modal__dialog')
         modalOverLay.removeClass('modal__overlay--visible')
         modalDialog.removeClass('modal__dialog--visible')
-    }
+    };
 
-    AOS.init();
-
-})
+    $(".form").each(function() {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Поле Имя обязательно",
+                    minlength: 2,
+                },
+                email: {
+                    required: "Пле Email обязателен",
+                },
+                phone: {
+                    required: "Поле Телефон обязателен",
+                },
+            },
+        });
+    })
+});
