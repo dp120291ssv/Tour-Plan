@@ -46,21 +46,47 @@ $(document).ready(function() {
         modalDialog.removeClass('modal__dialog--visible')
     };
 
-    $(".form").each(function() {
+    $('.form').each(function() {
         $(this).validate({
             errorClass: "invalid",
-            rules: {
-                messages: {
-                    name: {
-                        required: "Name field is required",
-                    },
-                    email: {
-                        required: "Email is required",
-                    },
-                    phone: {
-                        required: "The Phone field is required",
-                        minlength: 5,
-                    },
+            messages: {
+                name: {
+                    required: "Name field is required",
+                    minlength: "Minimum value 2 letters",
+                    maxlength: "Maximum length 25 letters",
+                },
+                email: {
+                    required: "Email is required",
+                    minlength: "Minimum value 4 characters",
+                    maxlength: "Maximum length 25 characters",
+                },
+                phone: {
+                    required: "The Phone field is required",
+                    minlength: "Minimum length 25 digits",
+                    maxlength: "Maximum length 25 digits",
+                },
+            },
+        });
+    })
+
+    $('.subscribe').each(function() {
+        $(this).validate({
+            errorClass: "invalid",
+            messages: {
+                name: {
+                    required: "Name field is required",
+                    minlength: "Minimum value 2 letters",
+                    maxlength: "Maximum length 25 letters",
+                },
+                email: {
+                    required: "Email is required",
+                    minlength: "Minimum value 4 characters",
+                    maxlength: "Maximum length 25 characters",
+                },
+                phone: {
+                    required: "The Phone field is required",
+                    minlength: "Minimum length 8 digits",
+                    maxlength: "Maximum length 15 digits",
                 },
             },
         });
